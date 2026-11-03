@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+.env
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated meta-tasks and harness output
+output/
+jobs/
+runs/
+*.log
+
+# Models, datasets, and trajectories (published separately)
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+*.jsonl
+*.parquet
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

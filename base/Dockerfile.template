@@ -1,0 +1,23 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        curl \
+        procps \
+        git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies for validation
+RUN pip install --no-cache-dir toml pytest
+
+# Copy example tasks for reference
+COPY examples/ /app/examples/
+
+# TOOL_COPY_PLACEHOLDER
+# TEMPLATES_COPY_PLACEHOLDER
+
+# Create output directory for agent to generate task
+RUN mkdir -p /app/output

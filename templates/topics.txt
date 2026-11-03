@@ -1,0 +1,2149 @@
+# Topic list for Phase 1 category generation
+# Each line is a topic (varying abstraction levels)
+# Lines starting with # are comments
+
+# === Computer Science Fundamentals ===
+compiler frontend
+compiler backend optimization passes
+garbage collector implementation
+memory allocator debugging
+virtual machine bytecode
+interpreter design
+JIT compilation
+abstract syntax tree manipulation
+type inference engine
+constraint solver
+SAT solver
+SMT solver
+graph coloring
+register allocation
+instruction scheduling
+cache-oblivious algorithms
+lock-free data structures
+persistent data structures
+probabilistic data structures
+bloom filter variants
+skip list
+B-tree variants
+R-tree spatial indexing
+trie and radix tree
+suffix array construction
+string matching algorithms
+regular expression engine
+parser generator
+language server protocol
+code formatter
+automata theory implementation
+lambda calculus evaluator
+garbage collection tuning
+reference counting vs tracing GC
+concurrency primitive design
+coroutine implementation
+continuation passing
+closure compilation
+tail call optimization
+dynamic dispatch mechanism
+vtable layout
+object layout and memory model
+hash table collision strategies
+union-find data structure
+segment tree
+balanced binary search tree rotation
+amortized analysis verification
+generic programming instantiation
+macro expansion engine
+Cython extension building and debugging
+C/Python FFI (foreign function interface)
+NumPy C API and array protocol
+verified compiler (CompCert, CakeML)
+Coq theorem proving
+Lean theorem prover
+formal verification of programs
+logic gate and digital circuit design
+digital circuit simulator
+polyglot programming (code valid in multiple languages)
+MIPS assembly and emulator
+RISC-V assembly and simulation
+CoreWars warrior programming
+Vim scripting and macro automation
+Vim plugin development
+QEMU virtual machine management
+mail server configuration (Postfix, Dovecot)
+mailing list server (Mailman)
+model extraction attack
+adversarial machine learning
+decompiler output analysis
+custom compressor/decompressor implementation
+lossless compression algorithm design
+
+# === Systems Programming ===
+custom filesystem implementation
+FUSE filesystem
+Linux kernel module
+eBPF program
+system call tracing
+ptrace debugger
+signal handling
+process scheduler simulation
+memory-mapped I/O
+shared memory IPC
+Unix domain sockets
+file descriptor passing
+epoll event loop
+io_uring
+custom shell implementation
+terminal emulator
+pseudo-terminal handling
+cgroup resource control
+namespace isolation
+seccomp filter
+ELF binary analysis
+dynamic linker
+symbol resolution
+DWARF debug info
+core dump analysis
+stack unwinding
+process memory map analysis
+procfs and sysfs parsing
+page fault handler
+swap management
+OOM killer tuning
+inotify file watcher
+fanotify filesystem monitor
+audit framework
+capability management
+SELinux policy
+AppArmor profile
+kernel tracing (ftrace, perf)
+CPU affinity and NUMA
+hugepage allocation
+tmpfs and ramfs
+overlayfs and union mount
+device mapper
+loop device management
+udev rule writing
+initramfs customization
+systemd unit dependencies
+journald log analysis
+dbus message inspection
+polkit policy
+
+# === Networking & Protocols ===
+TCP state machine
+custom protocol parser
+HTTP/2 frame decoder
+WebSocket implementation
+DNS resolver
+DHCP server
+MQTT broker
+gRPC service
+protocol buffer schema evolution
+network packet capture analysis
+TLS certificate chain validation
+mTLS setup
+SOCKS proxy
+NAT traversal
+BGP route analysis
+OSPF path computation
+ARP spoofing detection
+VLAN configuration
+network bridge
+traffic shaping
+load balancer algorithm
+service mesh
+connection pooling
+rate limiting
+HTTP/3 and QUIC
+SCTP multi-streaming
+multicast routing
+IGMP snooping
+IPv6 transition mechanism
+network address translation
+port forwarding
+VPN tunnel (WireGuard/IPSec)
+SSH tunneling and port forwarding
+SNMP monitoring
+NetFlow/sFlow collection
+bandwidth estimation
+congestion control algorithm
+TCP BBR tuning
+network namespace
+macvlan and ipvlan
+eBPF network filter (XDP)
+DNS over HTTPS (DoH)
+DNS over TLS (DoT)
+DNSSEC validation
+email protocol (SMTP/IMAP/POP3)
+email authentication (SPF/DKIM/DMARC)
+SIP/VoIP protocol
+RTP media streaming
+STUN/TURN/ICE for NAT traversal
+mDNS/DNS-SD service discovery
+Zeroconf networking
+network proxy chain
+
+# === Database & Storage ===
+B-tree storage engine
+LSM-tree compaction
+write-ahead log recovery
+MVCC implementation
+query optimizer
+query planner cost model
+index selection advisor
+deadlock detection
+transaction isolation levels
+distributed consensus
+Raft implementation
+Paxos
+two-phase commit
+vector clock
+CRDTs
+column-store compression
+time-series database
+graph database traversal
+full-text search index
+inverted index construction
+database migration tool
+schema diff
+connection pool management
+replication lag monitoring
+backup and point-in-time recovery
+sharding strategy
+partition pruning
+materialized view refresh
+stored procedure debugging
+trigger chain analysis
+foreign key constraint validation
+database vacuum and bloat
+WAL archiving and shipping
+logical replication
+change data capture (CDC)
+database connection proxy (pgbouncer)
+query result caching
+prepared statement management
+database audit logging
+row-level security policy
+column encryption
+database fuzzing
+SQL injection defense
+NoSQL document store
+key-value store implementation
+wide-column store
+object storage (S3-compatible)
+distributed file system
+block storage driver
+storage tiering
+data deduplication at block level
+erasure coding
+snapshot and clone management
+
+# === Relational Database Specifics ===
+PostgreSQL extension development
+PostgreSQL advisory locks
+PostgreSQL LISTEN/NOTIFY
+PostgreSQL custom aggregate
+PostgreSQL foreign data wrapper
+MySQL replication topology
+MySQL InnoDB buffer pool tuning
+MySQL partition management
+SQLite WAL mode
+SQLite virtual table
+SQLite FTS5 full-text search
+DuckDB analytics query
+ClickHouse materialized view
+TimescaleDB hypertable
+CockroachDB distributed SQL
+Vitess sharding middleware
+
+# === Security & Cryptography ===
+buffer overflow exploitation
+format string vulnerability
+return-oriented programming
+heap exploitation
+race condition exploit
+privilege escalation
+cryptographic protocol analysis
+side-channel attack
+timing attack mitigation
+certificate pinning bypass
+JWT token forgery
+OAuth flow vulnerability
+SSRF exploitation
+XXE injection
+deserialization attack
+binary patching
+malware analysis
+reverse engineering obfuscated code
+firmware extraction
+password hash cracking
+key derivation function
+elliptic curve implementation
+zero-knowledge proof
+homomorphic encryption
+secure multi-party computation
+penetration testing automation
+vulnerability scanner
+fuzzing harness
+symbolic execution
+taint analysis
+binary diffing
+patch analysis
+code signing verification
+software supply chain security
+dependency vulnerability scanning
+SAST (static application security testing)
+DAST (dynamic application security testing)
+IAST (interactive application security testing)
+web application firewall rule
+intrusion detection signature
+YARA rule writing
+Sigma rule for SIEM
+threat intelligence feed parsing
+STIX/TAXII threat sharing
+incident response playbook
+digital forensics acquisition
+memory forensics with Volatility
+disk forensics
+network forensics packet analysis
+log correlation for attack detection
+ransomware decryption
+steganography detection
+covert channel detection
+blockchain security audit
+smart contract vulnerability
+
+# === Cloud Tooling (Local/Offline) ===
+Terraform HCL validation and module testing
+CloudFormation template linting
+IAM policy JSON evaluation engine
+Kubernetes manifest validation
+cloud infrastructure cost estimation from config
+Dockerfile and docker-compose linting
+serverless function handler testing (local)
+cloud SDK mock and stub
+infrastructure as code static analysis
+cloud config drift detection from state files
+
+# === Kubernetes & Container Orchestration ===
+Kubernetes operator development
+Kubernetes custom resource definition
+Kubernetes admission webhook
+Kubernetes scheduler plugin
+Kubernetes network policy
+Kubernetes pod security
+Kubernetes RBAC
+Kubernetes service mesh (Istio/Linkerd)
+Kubernetes ingress controller
+Kubernetes persistent volume
+Kubernetes StatefulSet management
+Kubernetes DaemonSet
+Kubernetes Job and CronJob
+Kubernetes horizontal pod autoscaler
+Kubernetes vertical pod autoscaler
+Kubernetes cluster autoscaler
+Kubernetes etcd backup and restore
+Kubernetes cert-manager
+Kubernetes secrets management
+Kubernetes multi-tenancy
+Kubernetes cost optimization
+Kubernetes troubleshooting
+Helm chart development
+Helm chart debugging
+Kustomize overlay
+ArgoCD GitOps
+Flux CD deployment
+container image scanning
+container runtime security
+Docker multi-stage build optimization
+Docker Compose orchestration
+Docker networking
+Docker volume management
+container image layer optimization
+container registry management
+Podman rootless containers
+containerd configuration
+OCI image specification
+
+# === DevOps & CI/CD ===
+CI/CD pipeline debugging
+GitHub Actions workflow
+GitLab CI configuration
+Jenkins pipeline
+CircleCI orb
+Tekton pipeline
+Drone CI
+build cache optimization
+artifact management
+release automation
+semantic versioning automation
+changelog generation
+feature flag management
+blue-green deployment
+canary deployment
+rolling update strategy
+A/B test assignment algorithm
+infrastructure as code drift detection
+Terraform state management
+Terraform module development
+Terraform provider development
+Pulumi infrastructure
+Ansible playbook
+Ansible role development
+Chef cookbook
+Puppet manifest
+SaltStack formula
+cloud-init configuration
+Packer image builder
+Vagrant development environment
+environment provisioning
+configuration management
+secret rotation automation
+certificate lifecycle management
+GitOps workflow
+trunk-based development
+branch protection and merge policy
+code review automation
+
+# === Message Queue & Event Processing ===
+Kafka consumer group rebalancing
+Kafka topic partition management
+Kafka Connect connector
+Kafka Streams application
+RabbitMQ exchange routing
+RabbitMQ dead letter queue
+RabbitMQ shovel and federation
+Redis Pub/Sub
+Redis Streams
+NATS JetStream
+Apache Pulsar
+ZeroMQ pattern
+AMQP protocol
+STOMP protocol
+event sourcing implementation
+CQRS pattern
+saga orchestration
+outbox pattern
+message deduplication
+message ordering guarantee
+exactly-once delivery
+poison message handling
+backpressure mechanism
+event schema registry
+event replay
+event-driven architecture
+webhook delivery system
+webhook retry mechanism
+notification service
+email delivery pipeline
+
+# === Monitoring, Observability & Logging ===
+Prometheus metric collection
+Prometheus alerting rules
+Prometheus recording rules
+Grafana Loki log query
+OpenTelemetry instrumentation
+OpenTelemetry collector pipeline
+Jaeger distributed tracing
+Zipkin trace analysis
+Fluentd log pipeline
+Fluent Bit configuration
+Vector log router
+log aggregation
+log parsing and structuring
+log rotation and retention
+structured logging
+correlation ID propagation
+SLO error budget calculator
+status page backend API
+HTTP endpoint probe script
+APM (application performance monitoring)
+infrastructure monitoring
+network monitoring
+database monitoring
+custom metric exporter
+health check endpoint
+readiness and liveness probe
+anomaly detection in metrics
+
+# === Data Engineering & ETL ===
+Apache Spark job optimization
+Apache Spark Structured Streaming
+Flink streaming window
+Flink checkpoint recovery
+Airflow DAG debugging
+Airflow custom operator
+dbt model development
+dbt test and documentation
+data pipeline orchestration
+schema registry (Avro/Protobuf)
+data lake partitioning
+data lakehouse (Delta Lake/Iceberg/Hudi)
+parquet file repair
+avro schema evolution
+CDC (change data capture)
+ETL error handling
+data quality validation
+data quality framework (Great Expectations)
+data lineage tracking
+data catalog (DataHub/Amundsen)
+slowly changing dimensions
+star schema design
+data vault modeling
+real-time feature store
+batch vs streaming reconciliation
+data deduplication
+incremental processing
+backfill strategy
+column-level encryption in pipeline
+data masking
+PII detection and redaction
+data partitioning strategy
+data compaction
+small file problem
+data format conversion
+data serialization
+data compression algorithm
+data sampling strategy
+
+# === Machine Learning & AI ===
+neural network from scratch
+gradient descent variants
+backpropagation debugging
+custom loss function
+learning rate scheduler
+model quantization
+ONNX model conversion
+TensorFlow SavedModel debugging
+PyTorch custom autograd
+distributed training
+model parallelism
+data parallelism
+hyperparameter optimization
+feature engineering pipeline
+embeddings and vector search
+tokenizer implementation
+attention mechanism
+transformer architecture
+BERT fine-tuning
+LoRA adapter
+model pruning
+knowledge distillation
+adversarial examples
+model interpretability
+ML pipeline deployment
+MLflow experiment tracking
+model versioning
+model A/B testing
+model monitoring
+data drift detection
+concept drift detection
+model retraining pipeline
+feature store
+vector database (Pinecone/Milvus/Weaviate)
+RAG (retrieval-augmented generation)
+LLM prompt engineering
+LLM fine-tuning
+LLM evaluation
+LLM serving and inference optimization
+LLM context window management
+agent framework
+tool use and function calling
+chain-of-thought implementation
+multi-agent system
+reinforcement learning environment
+reward modeling
+RLHF pipeline
+image classification
+object detection
+semantic segmentation
+image generation (diffusion model)
+speech recognition
+text-to-speech
+recommendation system
+anomaly detection model
+time series forecasting model
+graph neural network
+federated learning
+differential privacy in ML
+AutoML pipeline
+neural architecture search
+deep learning framework from scratch
+Caffe model training
+CNN architecture implementation
+FastText model training with constraints
+model weight analysis and architecture recovery
+
+# === Data Science & Analytics ===
+exploratory data analysis
+statistical hypothesis testing
+A/B test analysis
+Bayesian inference
+survival analysis
+causal inference
+propensity score matching
+regression diagnostics
+multivariate analysis
+principal component analysis
+factor analysis
+cluster analysis
+association rule mining
+market basket analysis
+cohort analysis
+funnel analysis
+churn prediction
+customer segmentation
+lifetime value modeling
+demand forecasting
+sales forecasting
+inventory optimization
+pricing optimization
+sentiment analysis at scale
+social network analysis
+web analytics pipeline
+clickstream analysis
+attribution modeling
+experiment design
+power analysis
+bootstrap estimation
+cross-validation strategy
+feature selection
+dimensionality reduction
+outlier detection
+missing data imputation
+Jupyter notebook reproducibility
+
+# === Scientific Computing ===
+numerical integration
+ODE solver
+PDE finite element method
+Monte Carlo simulation
+molecular dynamics
+N-body simulation
+fluid dynamics (CFD)
+weather simulation
+climate model data processing
+spectral analysis
+FFT implementation
+signal filtering
+wavelet transform
+image reconstruction
+tomography
+seismic data processing
+astrophysics data pipeline
+particle physics analysis
+quantum circuit simulation
+lattice Boltzmann method
+finite difference method
+sparse matrix operations
+eigenvalue decomposition
+singular value decomposition
+numerical stability analysis
+optimization algorithm (gradient-free)
+genetic algorithm
+simulated annealing
+particle swarm optimization
+Bayesian optimization
+linear programming
+integer programming
+convex optimization
+tensor decomposition
+random matrix theory
+chaos theory simulation
+fractal generation
+cellular automaton
+agent-based modeling
+stochastic differential equation
+Markov chain Monte Carlo
+Raman spectroscopy peak fitting
+X-ray diffraction pattern analysis
+curve fitting and parameter estimation
+MuJoCo physics simulation tuning
+physics engine parameter optimization
+SPARQL query on RDF/OWL knowledge graph
+ontology reasoning and inference
+
+# === Bioinformatics & Life Sciences ===
+genome assembly
+sequence alignment
+variant calling pipeline
+phylogenetic tree construction
+RNA-seq analysis
+single-cell RNA-seq
+protein structure prediction
+molecular docking
+drug-target interaction
+CRISPR guide RNA design
+primer design
+plasmid assembly planning
+metabolic pathway analysis
+metagenomics
+protein folding energy minimization
+codon optimization
+gene expression clustering
+ChIP-seq peak calling
+GWAS analysis
+population genetics simulation
+protein-protein interaction network
+structural variant detection
+copy number variation
+epigenetics data analysis
+mass spectrometry data
+proteomics pipeline
+metabolomics analysis
+flow cytometry analysis
+bioimage analysis
+cell tracking
+DNA assembly and cloning design
+site-directed mutagenesis primer design
+histopathology image analysis
+cell segmentation (SAM, U-Net)
+
+# === Web Development ===
+REST API design
+GraphQL schema
+GraphQL resolver optimization
+API versioning
+API rate limiting
+API pagination
+API authentication (OAuth2/OpenID Connect)
+session management
+cookie security
+CORS configuration
+CSP (Content Security Policy)
+XSS prevention and filter bypass
+HTML sanitizer implementation
+CSRF protection
+SQL injection prevention
+input validation
+file upload security
+WebSocket real-time application
+Server-Sent Events
+long polling
+web caching strategy
+CDN configuration
+reverse proxy (nginx/HAProxy)
+web server configuration
+SSL/TLS setup
+HTTP header security
+web performance optimization
+lazy loading
+image optimization
+HTML accessibility lint tool
+URL router implementation
+SSR (server-side rendering)
+static site generation
+internationalization (i18n)
+localization (l10n)
+
+# === Web Scraping & Content Extraction ===
+web scraper development
+rate-limited scraping
+rotating proxy
+user agent rotation
+RSS/Atom feed parser
+sitemap parser
+robots.txt compliance
+structured data extraction (schema.org)
+HTML to markdown conversion
+PDF text extraction
+OCR pipeline
+web archive (WARC) processing
+link extraction and crawling
+content deduplication
+
+# === Frontend & UI ===
+WebAssembly module
+Service Worker caching
+WebRTC signaling
+SVG path manipulation
+DOM diffing algorithm
+virtual DOM implementation
+SSR hydration mismatch
+bundler plugin (webpack/vite/esbuild)
+tree shaking
+code splitting
+hot module replacement
+Chrome DevTools Protocol message parser
+performance profiling
+lighthouse audit automation
+React component testing
+Vue reactivity system
+state management debugging
+
+# === Audio & Signal Processing ===
+audio codec
+WAV file manipulation
+MIDI parser
+audio synthesis
+speech recognition preprocessing
+noise cancellation
+echo cancellation
+audio fingerprinting
+beat detection
+pitch detection
+spectrogram generation
+audio format conversion
+real-time audio streaming
+audio plugin (VST/AU)
+digital signal processing filter
+sample rate conversion
+audio compression
+spatial audio
+binaural rendering
+vocoder
+audio transcription pipeline
+speaker diarization
+acoustic model training
+audio watermarking
+ultrasonic communication
+
+# === Image & Video Processing ===
+image format decoder (PNG/JPEG/WebP/TIFF)
+image resizing and resampling
+image color correction
+HDR tone mapping
+panorama stitching
+image inpainting
+super-resolution
+face detection
+face recognition
+OCR (optical character recognition)
+barcode/QR code recognition
+document layout analysis
+video codec (H.264/H.265/VP9/AV1)
+video transcoding
+video frame extraction
+video stabilization
+video object tracking
+video summarization
+subtitle extraction and synchronization
+live streaming pipeline (HLS/DASH)
+video watermarking
+thumbnail generation
+GIF creation and optimization
+animated WebP/AVIF
+
+# === Graphics & 3D ===
+ray tracer
+rasterizer
+3D mesh processing
+point cloud processing
+texture mapping
+shader compilation
+scene graph
+physics engine
+collision detection
+pathfinding (A*, Dijkstra, JPS)
+procedural generation
+fractal rendering
+color space conversion
+PDF parser and generator
+SVG renderer
+chart rendering library
+data visualization pipeline
+geographic map rendering
+heatmap generation
+Blender Python scripting
+3D model format conversion (glTF/OBJ/FBX)
+voxel engine
+marching cubes
+signed distance field
+level of detail (LOD)
+normal map generation
+
+# === Embedded & Hardware ===
+FPGA synthesis
+Verilog simulation
+VHDL testbench
+bootloader
+firmware update mechanism
+real-time operating system (RTOS)
+interrupt handler
+CAN bus frame parser
+Modbus TCP protocol implementation
+embedded Linux (Yocto/Buildroot)
+cross-compilation toolchain
+device tree configuration
+flash memory management
+OTA (over-the-air) update
+
+# === Game Development ===
+game physics simulation
+entity component system
+game state serialization
+pathfinding in tile map
+procedural dungeon generation
+game replay system
+deterministic lockstep
+client-side prediction
+game AI behavior tree
+inventory system
+dialogue system
+quest state machine
+save game format
+level editor tool
+sprite sheet packer
+collision broadphase
+spatial hashing
+game networking protocol
+leaderboard system
+anti-cheat detection
+game mod loader
+Lua/Python scripting integration
+particle system
+animation state machine
+terrain generation
+voxel world
+game economy balancing
+matchmaking algorithm
+game telemetry pipeline
+game server scaling
+
+# === Finance & Trading ===
+order book matching engine
+market data feed parser
+risk calculation (VaR/CVaR)
+options pricing (Black-Scholes/binomial)
+portfolio optimization
+backtesting framework
+trading signal generation
+FIX protocol parser
+SWIFT message parser
+reconciliation system
+settlement system
+regulatory reporting (MiFID/Dodd-Frank)
+transaction monitoring
+anti-money laundering (AML)
+credit scoring model
+time series forecasting for finance
+volatility surface
+yield curve construction
+Monte Carlo option pricing
+exchange rate conversion
+financial calendar
+high-frequency trading latency optimization
+tick data processing
+order management system
+position management
+margin calculation
+corporate action processing
+fund NAV calculation
+
+# === Cryptocurrency & Web3 ===
+Ethereum smart contract development
+Solidity debugging
+smart contract security audit
+ERC-20/ERC-721/ERC-1155 token
+DeFi smart contract local testing
+DEX (decentralized exchange) aggregation
+NFT metadata management
+blockchain data indexing (The Graph)
+wallet integration
+transaction signing
+gas optimization
+Merkle tree verification
+zero-knowledge rollup
+blockchain bridge
+DAO governance
+yield farming calculator
+liquidity pool analysis
+on-chain analytics
+Bitcoin script
+Lightning Network
+
+# === Geospatial & Weather ===
+GIS data processing
+shapefile parser
+GeoJSON manipulation
+coordinate system transformation (EPSG)
+spatial join
+route optimization
+elevation data processing
+satellite image processing
+LiDAR point cloud
+map tile generation (vector/raster)
+isochrone calculation
+spatial clustering
+land use classification
+flood simulation
+terrain analysis
+GPS track analysis
+geofencing
+weather forecast model
+precipitation analysis
+wind pattern analysis
+air quality monitoring
+ocean current modeling
+wildfire spread simulation
+agricultural remote sensing
+urban heat island analysis
+cartographic generalization
+
+# === Text & NLP ===
+text encoding conversion (UTF-8/16/32/Latin)
+Unicode normalization
+regex engine implementation
+diff algorithm
+merge conflict resolution
+document format conversion
+PDF text extraction and parsing
+OCR post-processing
+named entity recognition
+sentiment analysis pipeline
+text classification
+topic modeling (LDA/BERTopic)
+language detection
+spell checker
+grammar checker
+text summarization
+machine translation preprocessing
+word embedding training
+TF-IDF computation
+search engine indexing
+search ranking algorithm
+autocomplete/typeahead
+fuzzy string matching
+text deduplication
+plagiarism detection
+keyword extraction
+relation extraction
+coreference resolution
+question answering pipeline
+chatbot intent classification
+dialogue management
+
+# === Legal & Compliance ===
+contract clause extraction
+regulatory document parsing
+compliance rule engine
+audit trail analysis
+data retention policy enforcement
+GDPR data subject request processing
+PII detection and redaction
+access control audit
+license compatibility checker
+intellectual property search
+legal citation parser
+court filing format conversion
+e-discovery document processing
+redaction verification
+whistleblower report pipeline
+KYC (Know Your Customer) verification
+sanctions screening
+export control classification
+consent preference storage backend
+
+# === Healthcare & Medical ===
+DICOM image processing
+HL7 FHIR message parsing
+clinical trial data analysis
+EHR data extraction
+medical coding (ICD-10/CPT)
+drug interaction checker
+patient pathway analysis
+medical image segmentation
+radiology report parsing
+vital signs monitoring pipeline
+epidemiological modeling
+hospital capacity planning
+appointment scheduling optimization
+insurance claim processing
+medical record anonymization
+clinical decision support
+adverse event detection
+drug dosage calculation
+public health surveillance
+vaccine distribution optimization
+contact tracing system
+health data interoperability
+
+# === Supply Chain & Logistics ===
+inventory optimization
+demand forecasting
+warehouse layout optimization
+vehicle routing problem
+shipment tracking pipeline
+barcode/QR code processing
+EDI message parsing
+customs declaration processing
+container load planning
+last-mile delivery optimization
+supplier risk scoring
+procurement automation
+bill of materials explosion
+production scheduling
+warehouse management system
+pick-pack-ship optimization
+return merchandise authorization
+freight rate calculation
+cross-docking optimization
+fleet management
+route optimization with constraints
+delivery time window scheduling
+product traceability
+
+# === Energy & Utilities ===
+smart grid simulation
+power flow analysis
+renewable energy forecasting
+battery management system
+SCADA protocol parsing
+energy consumption analytics
+electric vehicle charging optimization
+carbon footprint calculation
+building energy modeling
+weather-dependent load forecasting
+power plant maintenance scheduling
+grid stability analysis
+distributed energy resource management
+utility billing system
+meter data management
+solar panel output prediction
+wind turbine performance analysis
+energy storage optimization
+demand response management
+power quality analysis
+microgrid control
+energy trading platform
+smart meter data processing
+gas pipeline monitoring
+
+# === Education & Learning ===
+automatic grading system
+plagiarism detector
+code submission sandbox
+learning management system
+adaptive learning algorithm
+quiz question generation
+student performance prediction
+curriculum recommendation
+peer review assignment
+interactive coding tutorial
+notebook auto-grading
+educational content tagging
+spaced repetition system
+concept dependency graph
+
+# === Agriculture & Environment ===
+crop yield prediction
+soil analysis pipeline
+irrigation scheduling
+pest detection from images
+aerial orthophoto processing
+farm management system
+food safety traceability
+water quality analysis
+biodiversity survey data
+deforestation detection
+carbon sequestration estimation
+waste management optimization
+
+# === Media & Publishing ===
+content management system
+markdown to HTML renderer
+static site generator
+blog engine
+comment system
+content moderation pipeline
+image CDN optimization
+font subsetting
+ebook format conversion (EPUB/MOBI)
+typesetting engine
+print layout
+podcast RSS feed
+media asset management
+digital rights management
+paywall system
+
+# === Telecommunications ===
+call detail record analysis
+VoLTE call flow
+telecom billing mediation
+network topology discovery
+fiber optic network planning
+QoS policy management
+
+# === Manufacturing & Industrial ===
+PLC programming (ladder logic)
+SCADA system configuration
+OPC-UA protocol
+digital twin simulation
+predictive maintenance
+quality control statistical process
+manufacturing execution system
+CNC G-code generation
+robot arm path planning
+assembly line balancing
+defect detection (machine vision)
+industrial IoT data pipeline
+process control loop tuning
+SPC chart analysis
+failure mode analysis (FMEA)
+
+# === DevTools & Productivity ===
+code search engine
+AST-based refactoring tool
+dead code detector
+dependency graph analyzer
+API compatibility checker
+documentation generator
+code coverage analysis
+profiler flamegraph generation
+memory leak detector
+linter rule implementation
+code review automation
+test generation tool
+benchmark harness
+build system (Make/Bazel/Ninja/CMake)
+package manager dependency resolver
+monorepo management tool
+git hook framework
+IDE plugin/extension
+debugger protocol (DAP)
+REPL implementation
+notebook execution engine
+task runner (Make/Just/Task)
+dotfile manager
+terminal multiplexer configuration
+CLI argument parser
+man page generator
+shell completion generator
+project scaffolding tool
+migration script generator
+
+# === API & Integration ===
+REST API client library
+GraphQL client
+API gateway configuration
+API mocking server
+API documentation (OpenAPI/Swagger)
+API testing automation
+API load testing
+API contract testing
+API backward compatibility check
+webhook handler
+OAuth2 provider implementation
+SAML integration
+LDAP directory integration
+SSO (single sign-on) setup
+API key management
+API usage analytics
+API throttling
+API response caching
+SDK generation from OpenAPI
+API migration (v1 to v2)
+
+# === Testing & Quality Assurance ===
+unit test framework
+integration test harness
+end-to-end test automation
+load testing (k6/Locust/JMeter)
+chaos testing
+property-based testing
+mutation testing
+snapshot testing
+accessibility testing
+security testing (OWASP ZAP)
+API contract testing
+test data generation
+test fixture management
+test coverage report
+flaky test detection
+test parallelization
+test environment management
+mock server
+test result aggregation
+performance regression detection
+
+# === Memory & Knowledge Management ===
+knowledge graph construction
+ontology design
+semantic search
+document embedding
+retrieval-augmented generation (RAG) pipeline
+vector store management
+caching strategy (Redis/Memcached)
+LRU/LFU cache implementation
+distributed cache
+session store
+content-addressable storage
+deduplication engine
+archival storage
+data lifecycle management
+bookmark and annotation system
+wiki engine
+personal knowledge base
+note-taking system backend
+tagging and classification system
+
+# === Automation & Workflow ===
+workflow engine
+state machine implementation
+rule engine
+event-driven automation
+scheduled task management (cron)
+job queue (Celery/Sidekiq/Bull)
+task dependency resolution
+retry with exponential backoff
+circuit breaker pattern
+saga pattern implementation
+compensation transaction
+idempotency handling
+long-running process management
+human-in-the-loop workflow
+approval workflow
+email automation
+report generation automation
+data pipeline scheduling
+ETL job orchestration
+CLI web request automation
+CLI workflow automation
+Makefile automation
+shell script orchestration
+
+# === Search & Discovery ===
+full-text search engine (Elasticsearch/Solr/Meilisearch)
+search relevance tuning
+search query parser
+autocomplete and suggestion
+faceted search
+fuzzy search
+semantic search with embeddings
+search analytics
+search result ranking
+inverted index optimization
+BM25 scoring
+vector similarity search
+hybrid search (keyword + semantic)
+search index migration
+search synonym management
+entity resolution
+record linkage
+deduplication across datasets
+recommendation engine
+collaborative filtering
+content-based filtering
+
+# === Identity & Access Management ===
+OAuth2 authorization server
+OpenID Connect provider
+SAML identity provider
+JWT token management
+multi-factor authentication
+passwordless authentication
+WebAuthn/FIDO2
+role-based access control (RBAC)
+attribute-based access control (ABAC)
+permission system design
+API key lifecycle
+service account management
+SSO federation
+directory service (LDAP/AD)
+user provisioning (SCIM)
+session management
+token refresh mechanism
+audit logging for access
+
+# === Configuration & Environment ===
+configuration file format design
+environment variable management
+feature flag system
+A/B test configuration
+dynamic configuration reload
+config file migration between formats
+dotenv management
+secret management (Vault/SOPS)
+configuration validation
+schema migration
+database schema version control
+infrastructure drift detection
+deployment configuration
+multi-environment setup (dev/staging/prod)
+locale and timezone configuration
+logging level configuration
+
+# === Compression & Encoding ===
+compression algorithm (gzip/zstd/lz4/brotli)
+archive format (tar/zip/7z/rar)
+delta encoding
+run-length encoding
+Huffman coding
+arithmetic coding
+image compression
+video compression
+audio compression
+data serialization format (JSON/YAML/TOML/MessagePack/CBOR)
+base64 encoding variants
+protobuf/flatbuffer/cap'n proto
+ASN.1 encoding (DER/BER)
+character encoding conversion
+binary protocol encoding
+custom wire format
+
+# === Version Control & Collaboration ===
+git internals (objects/refs/packfiles)
+git merge strategy
+git rebase conflict resolution
+git bisect
+git hook scripting
+git submodule management
+git LFS
+git worktree
+git sparse checkout
+git monorepo management
+git migration (SVN to Git)
+code review workflow
+pull request automation
+merge queue
+branch management strategy
+release branch management
+cherry-pick automation
+git blame analysis
+commit message convention
+conventional commits
+
+# === Documentation & Reporting ===
+documentation site generator (MkDocs/Docusaurus/Sphinx)
+API documentation from code
+inline documentation extraction
+README generation
+runbook/playbook authoring
+technical writing automation
+diagram generation (Mermaid/PlantUML/D2)
+architecture decision record (ADR)
+test report generation
+coverage report
+dependency report
+license report
+security advisory
+changelog automation
+release notes generation
+
+# === Miscellaneous & Cross-Domain ===
+calendar system conversion
+timezone handling
+barcode generation
+QR code error correction
+cron expression parser
+systemd service management
+init system
+log rotation configuration
+file integrity monitoring
+disk usage analyzer
+archive management
+feature flag evaluation
+plugin system architecture
+rate limiter implementation
+distributed lock
+consensus protocol
+gossip protocol
+Merkle tree implementation
+content-addressable storage
+image steganography
+digital forensics
+memory forensics
+network forensics
+log forensics
+timeline reconstruction
+data recovery
+file carving
+deleted file recovery
+RAID reconstruction
+backup verification
+disaster recovery testing
+chaos engineering experiment
+canary analysis
+progressive rollout
+dark launch
+trunk-based development workflow
+monolith to microservice migration
+strangler fig pattern
+sidecar pattern
+ambassador pattern
+service locator pattern
+dependency injection framework
+aspect-oriented programming
+internationalization pipeline
+accessibility compliance
+performance budget
+web vitals optimization
+resource hint optimization (preload/prefetch)
+service worker strategy
+offline-first application
+CDN invalidation strategy
+multi-region deployment
+captcha implementation
+bot detection
+web scraping defense
+DDoS mitigation configuration
+
+# === Code Golf & Constrained Programming ===
+code golf challenge (shortest solution)
+restricted instruction set programming
+polyglot program (runs in multiple languages)
+quine (self-reproducing program)
+obfuscated code writing
+single-expression solution
+byte-count minimized program
+regex golf (shortest regex for a specification)
+esoteric language interpreter (Brainfuck/Befunge/Whitespace)
+constraint-based code generation (no loops, no if, no variables, etc.)
+ASCII art generator with code constraints
+one-liner challenge
+
+# === Code Migration & Modernization ===
+Python 2 to Python 3 migration
+JavaScript CommonJS to ESM migration
+Java to Kotlin migration
+synchronous to async code conversion
+callback to promise/async-await refactoring
+monolith to microservice decomposition
+REST to GraphQL migration
+XML config to YAML/TOML migration
+framework version upgrade (Django/Rails/Spring)
+legacy build system migration (Make to CMake/Bazel)
+database ORM migration
+API version migration (v1 to v2 with backward compatibility)
+
+# === Incident Response & Production Debugging ===
+production memory leak diagnosis
+cascading failure analysis
+split-brain recovery
+data corruption investigation
+deployment rollback procedure
+service degradation root cause analysis
+runaway process identification
+disk space exhaustion recovery
+certificate expiration incident
+DNS resolution failure debugging
+connection pool exhaustion
+thread deadlock in production
+log-based incident timeline reconstruction
+configuration drift causing outage
+
+# === Puzzle, Game Solving & Recreational Programming ===
+Sudoku solver
+Sudoku generator with unique solution guarantee
+crossword puzzle generator
+crossword clue matching
+maze generation and solving
+maze pathfinding with constraints (weighted, fog-of-war)
+nonogram (picross) solver
+logic grid puzzle solver
+constraint satisfaction puzzle
+KenKen puzzle solver
+Kakuro solver
+jigsaw puzzle edge matching
+sliding tile puzzle (15-puzzle) solver
+Rubik's cube state representation and solver
+chess engine (minimax/alpha-beta)
+chess puzzle mate-in-N finder
+Go game scoring
+Othello/Reversi AI
+Connect Four solver
+Minesweeper probability analysis
+Minesweeper auto-solver
+Wordle solver strategy
+cryptogram decoder (substitution cipher puzzle)
+escape room logic puzzle chain
+Tower of Hanoi variant solver
+eight queens problem and generalizations
+knight's tour
+bridges (Hashiwokakero) puzzle solver
+Sokoban level solver
+2048 game AI
+Tetris AI (placement strategy)
+poker hand evaluator
+poker odds calculator
+game tree search
+retrograde analysis (chess endgame tablebase)
+puzzle difficulty rating algorithm
+interactive fiction parser (text adventure)
+
+# === Chemistry & Chemical Engineering ===
+molecular structure representation (SMILES, InChI)
+chemical reaction balancing
+stoichiometry calculator
+molecular weight calculation
+chemical formula parser
+periodic table property lookup
+Lewis structure generator
+molecular orbital calculation
+chemical kinetics simulation
+reaction rate equation solver
+equilibrium constant calculation
+pH and buffer calculation
+titration curve simulation
+electrochemistry cell potential
+thermochemistry enthalpy calculation
+polymer chain growth simulation
+crystal structure analysis
+XRD (X-ray diffraction) pattern matching
+mass spectrometry peak identification
+NMR spectrum analysis
+chromatography peak integration
+chemical inventory management
+MSDS (Material Safety Data Sheet) parser
+chemical compatibility checker
+retrosynthesis pathway finder
+molecular fingerprint similarity
+QSAR (quantitative structure-activity relationship) model
+chemical file format conversion (SDF, MOL, CIF)
+
+# === Thermodynamics & Thermal Physics ===
+heat equation solver (1D, 2D)
+thermal conduction simulation
+convective heat transfer calculation
+radiation heat transfer modeling
+phase transition simulation (solid-liquid-gas)
+thermodynamic cycle analysis (Carnot, Rankine, Brayton)
+entropy calculation
+Gibbs free energy minimization
+equation of state solver (van der Waals, Peng-Robinson)
+calorimetry data analysis
+thermal expansion coefficient calculation
+heat exchanger design calculation
+insulation thickness optimization
+temperature distribution in composite materials
+Stefan-Boltzmann radiation calculation
+Boltzmann distribution sampling
+Ising model simulation
+black body radiation spectrum
+thermocouple voltage-temperature conversion
+thermal stress analysis
+
+# === Astronomy & Astrophysics ===
+celestial coordinate transformation (RA/Dec, Alt/Az, galactic)
+orbital mechanics calculation (Kepler's laws)
+two-body problem solver
+orbital transfer calculation (Hohmann, bi-elliptic)
+satellite orbit propagation
+asteroid trajectory prediction
+star catalog query and cross-match
+Hertzsprung-Russell diagram classification
+stellar evolution model
+light curve analysis (exoplanet transit, variable stars)
+gravitational lensing simulation
+galaxy rotation curve fitting
+redshift calculation
+cosmic distance ladder computation
+FITS file processing
+astronomical image stacking
+aperture photometry
+spectral line identification
+radial velocity measurement
+ephemeris calculation (planet/moon positions)
+Julian date conversion
+sidereal time calculation
+telescope pointing model
+solar system simulation
+n-body gravitational simulation
+dark matter density profile fitting
+cosmic microwave background analysis
+pulsar timing analysis
+
+# === Pure Mathematics & Number Theory ===
+prime number generation and primality testing
+prime factorization
+modular arithmetic and modular inverse
+Chinese remainder theorem solver
+discrete logarithm
+elliptic curve arithmetic
+RSA key generation from scratch
+continued fraction expansion
+Fibonacci sequence variants and properties
+Catalan number computation
+partition function (number theory)
+Euler's totient function
+Möbius function and inversion
+Diophantine equation solver
+Pell's equation
+quadratic residue and Legendre symbol
+polynomial arithmetic (GF(2), GF(p))
+polynomial root finding
+matrix operations over finite fields
+group theory: permutation group operations
+graph isomorphism testing
+chromatic polynomial
+Ramsey number computation
+combinatorial optimization
+generating function manipulation
+symbolic differentiation
+symbolic integration
+Taylor series expansion
+numerical root finding (Newton, bisection, Brent)
+interval arithmetic
+arbitrary precision arithmetic
+pi digit computation
+computational geometry (convex hull, Voronoi, Delaunay)
+triangulation algorithm
+closest pair of points
+line segment intersection
+polygon area and centroid
+
+# === Linguistics & Natural Language ===
+morphological analyzer
+part-of-speech tagger
+dependency parser
+constituency parser
+phonetic transcription (IPA converter)
+syllable counter
+rhyme finder
+word frequency analysis
+n-gram language model
+Zipf's law verification
+readability score calculator (Flesch-Kincaid, etc.)
+text complexity analysis
+corpus concordance tool
+lexical database builder
+anagram finder
+palindrome detector
+word ladder solver
+etymology chain tracer
+transliteration system
+phoneme-to-grapheme mapping
+Soundex/Metaphone implementation
+edit distance (Levenshtein) calculator
+longest common subsequence
+string alignment (Needleman-Wunsch for text)
+language model perplexity calculation
+BPE (byte pair encoding) tokenizer
+WordPiece tokenizer
+SentencePiece model training
+vocabulary builder from corpus
+stopword list generation
+
+# === Music Theory & Audio Composition ===
+MIDI file parser and generator
+music notation parser (ABC notation, MusicXML, LilyPond)
+chord progression generator
+scale and mode generator
+melody harmonization
+rhythm pattern generator
+time signature detector
+key signature detection from notes
+interval calculator
+music transposition tool
+12-tone row generator and analyzer
+Markov chain music generator
+beat grid alignment
+audio tempo detection (BPM)
+sheet music to MIDI converter
+music theory rule checker (voice leading, parallel fifths)
+counterpoint generator
+song structure analyzer (verse, chorus, bridge)
+lyrics syllable alignment
+ear training quiz generator
+
+# === Ecology & Environmental Modeling ===
+population dynamics simulation (Lotka-Volterra)
+predator-prey model
+logistic growth model
+carrying capacity estimation
+species diversity index (Shannon, Simpson)
+food web analysis
+ecological niche modeling
+species distribution modeling
+habitat suitability analysis
+migration pattern simulation
+forest fire spread model
+epidemic spreading simulation (SIR, SEIR)
+population viability analysis
+genetic drift simulation
+Hardy-Weinberg equilibrium test
+phylogenetic distance calculation
+island biogeography model
+nutrient cycle simulation
+pollinator network analysis
+invasive species spread model
+
+# === Robotics & Control Systems ===
+forward kinematics
+inverse kinematics solver
+PID controller tuning
+robot arm workspace calculation
+Jacobian computation
+trajectory planning
+motion planning (RRT, PRM)
+SLAM (simultaneous localization and mapping) simulation
+occupancy grid mapping
+A* pathfinding on grid with obstacles
+potential field navigation
+Kalman filter implementation
+extended Kalman filter
+particle filter
+state estimation
+control system transfer function analysis
+Bode plot generation
+Nyquist stability analysis
+root locus computation
+linear quadratic regulator (LQR)
+model predictive control
+servo motor position control simulation
+differential drive robot simulation
+
+# === Electrical & Electronic Engineering ===
+circuit analysis (Kirchhoff's laws)
+node voltage method solver
+mesh current method solver
+Thevenin/Norton equivalent
+AC circuit phasor analysis
+impedance calculation
+filter design (low-pass, high-pass, band-pass, notch)
+Bode plot from transfer function
+Fourier series decomposition
+Laplace transform
+Z-transform
+digital filter design (FIR, IIR)
+signal convolution
+signal correlation
+power spectral density estimation
+AM/FM modulation and demodulation
+sampling theorem verification
+aliasing demonstration
+window function application
+SPICE netlist parser
+PCB trace impedance calculator
+transmission line analysis
+Smith chart calculation
+antenna gain pattern
+
+# === Sociology & Social Science Data ===
+survey data analysis
+Likert scale analysis
+census data processing
+social network graph analysis
+community detection algorithm
+influence propagation model
+voting system analysis (Condorcet, Borda, etc.)
+gerrymandering detection
+opinion poll aggregation
+demographic data pipeline
+inequality index calculation (Gini, Theil)
+mobility index computation
+crime hotspot analysis
+urban planning data analysis
+traffic flow simulation
+queuing theory simulation
+
+# === Archaeology & History Data ===
+radiocarbon dating calibration
+archaeological site database
+artifact classification from features
+seriation (chronological ordering)
+Harris matrix (stratigraphic analysis)
+historical text digitization pipeline
+historical currency conversion
+genealogy tree computation
+ancient calendar conversion
+historical map georeferencing
+
+# === Psychology & Cognitive Science ===
+reaction time experiment analysis
+psychometric test scoring
+IRT (item response theory) model
+signal detection theory (d-prime calculation)
+memory recall experiment simulation
+Stroop effect data analysis
+eye-tracking data processing
+EEG signal processing
+cognitive load measurement
+survey instrument reliability (Cronbach's alpha)
+
+# === Sports & Athletics Analytics ===
+Elo rating system
+TrueSkill ranking
+sports statistics aggregation
+win probability model
+player performance metric calculation
+tournament bracket generator
+round-robin scheduler
+sports play-by-play parser
+expected goals (xG) model
+draft pick value analysis
+salary cap optimization
+fantasy sports optimizer
+race timing system
+swimming/running split analysis
+
+# === Cooking & Nutrition ===
+recipe parser
+ingredient substitution engine
+nutritional value calculator
+meal planner with dietary constraints
+recipe scaling calculator
+cooking time optimizer
+food pairing algorithm
+grocery list generator from meal plan
+calorie tracker data pipeline
+recipe similarity matcher
+unit conversion for cooking measurements
+
+# === Typography & Typesetting ===
+font file parser (TTF/OTF)
+glyph outline extraction
+font metrics calculation
+kerning table analysis
+text shaping algorithm (bidirectional, ligatures)
+line breaking algorithm (Knuth-Plass)
+hyphenation algorithm
+paragraph justification
+page layout algorithm
+markdown renderer
+LaTeX formula parser
+LaTeX to HTML converter
+rich text format (RTF) parser
+PDF structure analysis
+PDF form field extraction
+OpenType feature parser
+
+# === Cartography & Map Making ===
+map projection conversion
+Mercator to Robinson projection
+tile coordinate system (slippy map)
+contour line generation from DEM
+hillshade rendering
+label placement optimization
+road network simplification
+building footprint generalization
+choropleth map data preparation
+map legend generator
+scale bar calculation
+coordinate grid overlay
+
+# === Forensic Science (Digital & Physical) ===
+file signature analysis (magic bytes)
+metadata extraction (EXIF, PDF metadata, Office documents)
+email header analysis
+IP address geolocation from logs
+browser history reconstruction
+deleted file timestamp analysis
+Windows registry artifact parsing
+USB device connection history
+filesystem journal analysis
+steganography detection in images
+network traffic pattern analysis
+cryptocurrency transaction tracing
+social media data correlation
+document forgery detection (metadata inconsistency)
+
+# === Transportation & Urban Planning ===
+traffic signal optimization
+intersection capacity analysis
+transit route planning
+GTFS (General Transit Feed Specification) parser
+ride-sharing matching algorithm
+parking space optimization
+bicycle route planner
+pedestrian flow simulation
+airport gate assignment
+flight delay prediction
+airline crew scheduling
+railway timetable optimization
+toll calculation system
+vehicle emissions calculator
+
+# === Materials Science ===
+crystal structure generation
+lattice parameter calculation
+Bragg's law computation
+phonon dispersion calculation
+band structure plotting
+elastic modulus calculation from stress-strain data
+phase diagram computation
+alloy composition optimization
+material property database query
+fatigue life estimation
+creep rate calculation
+corrosion rate prediction
+composite material layup optimization
+thermal conductivity estimation
+
+# === Classic Algorithms & Data Structures ===
+sorting algorithm comparison (quicksort/mergesort/heapsort/timsort)
+dynamic programming problem solving
+greedy algorithm design
+divide and conquer algorithm
+backtracking algorithm (N-queens, Sudoku)
+graph traversal (BFS/DFS) with applications
+shortest path algorithm (Dijkstra/Bellman-Ford/Floyd-Warshall)
+minimum spanning tree (Kruskal/Prim)
+topological sorting
+binary search variations
+two-pointer technique
+sliding window algorithm
+interval scheduling and merging
+knapsack problem variants
+longest common subsequence / subsequence problems
+
+# === Multi-Language Programming ===
+Rust systems programming
+Rust ownership and borrow checker patterns
+Go concurrent programming (goroutines/channels)
+Go network service implementation
+Java enterprise application patterns
+Scala functional programming
+Haskell type system exercises
+Erlang/Elixir distributed programming
+Ruby metaprogramming
+PHP legacy application modernization
+TypeScript advanced type gymnastics
+Perl text processing
+R statistical computing
+
+# === Code Refactoring & Modernization ===
+legacy code refactoring
+extract method/class refactoring
+monolith to microservice decomposition
+tightly coupled code decoupling
+design pattern application (factory/strategy/observer)
+dead code elimination and cleanup
+code duplication reduction (DRY refactoring)
+API interface redesign for backward compatibility
+
+# === Build Tools & Dependency Management ===
+Gradle build configuration
+Maven project management
+Cargo build and dependency management (Rust)
+sbt build tool (Scala)
+Poetry/PDM Python project management
+npm/yarn/pnpm package management
+apt/dpkg Debian package creation and management
+RPM package building (rpmbuild/spec files)
+pip/conda environment and dependency management
+dependency conflict resolution
+lockfile generation and management
+monorepo dependency management (Lerna/Nx/Turborepo)
+legacy software compilation (autoconf/automake)
+
+# === Document & Spreadsheet Processing ===
+Excel spreadsheet manipulation (openpyxl/xlsxwriter)
+CSV advanced processing (large file, encoding, delimiter)
+Word document generation and parsing (python-docx)
+Jinja2 template rendering
+Handlebars/Mustache template engine
+LaTeX document compilation and processing
+Markdown to HTML/PDF conversion pipeline
+invoice/report PDF generation
+mail merge automation
+spreadsheet formula evaluation engine
+pivot table computation from raw data
+
+# === File Operations & Synchronization ===
+batch file renaming with pattern matching
+directory tree traversal and analysis
+file deduplication across directories
+rsync-based file synchronization
+file integrity verification (checksum comparison)
+large file splitting and reassembly
+file format detection (magic bytes)
+file permission audit and repair
+recursive directory comparison (diff)
+temporary file lifecycle management
+file locking and concurrent access
+watch directory for changes and trigger actions
+
+# === Package Management & System Administration ===
+apt repository setup and management
+pip package publishing to PyPI
+npm package publishing workflow
+conda environment export and reproduction
+virtual environment management (venv/virtualenv/conda)
+dependency pinning and version constraint resolution
+system package dependency graph resolution
+iptables firewall rule management
+nftables firewall configuration
+POSIX ACL (Access Control List) management
+PAM (Pluggable Authentication Modules) configuration
+git repository cleanup and garbage collection
+git repository size reduction (BFG cleaner)
+
+# === Data Visualization Frameworks ===
+Matplotlib chart customization
+Plotly interactive visualization
+Bokeh dashboard creation
+Seaborn statistical visualization
+D3.js data-driven visualization
+Dash web dashboard application
+Grafana dashboard provisioning
+chart accessibility (color-blind friendly palettes)
+publication-quality figure generation
+animated data visualization
+
+# === Deep Learning & Model Serving ===
+JAX/Flax neural network implementation
+HuggingFace Transformers model loading and inference
+batch inference pipeline optimization
+model serving with TorchServe/Triton
+ONNX model optimization and quantization
+edge device model deployment (TFLite/CoreML)
+model A/B testing infrastructure
+model monitoring and drift detection
+early stopping strategy implementation
+learning rate scheduler design
+
+# === Earth Science & Geology ===
+geological layer modeling
+gravity anomaly analysis
+gravitational wave signal processing
+subsurface 3D model construction
+mineral resource estimation (kriging)
+groundwater flow simulation
+volcanic eruption simulation
+glacial movement modeling
+
+# === Simulation & System Dynamics ===
+discrete event simulation (SimPy)
+system dynamics modeling (stock-and-flow)
+agent-based epidemic simulation
+cellular automata simulation
+queuing network simulation
+supply chain simulation
+digital twin implementation
+hardware-in-the-loop simulation
+
+# === Vulnerability Remediation & Security Patching ===
+CVE vulnerability assessment and remediation
+security patch backporting
+dependency vulnerability fix (Dependabot/Renovate)
+code security audit and refactoring
+OWASP Top 10 mitigation implementation
+container image vulnerability remediation
+security regression testing after patch
+
+# === Control Systems & Autonomous Systems ===
+adaptive control system design
+autonomous vehicle path planning
+sensor fusion (Kalman filter)
+SLAM (simultaneous localization and mapping)
+reinforcement learning for control
+state estimation and observer design
+H-infinity robust control
+
+# === Game Theory & Formal Methods ===
+Nash equilibrium computation
+mechanism design implementation
+auction algorithm simulation
+voting system analysis (Arrow's theorem)
+cooperative game theory (Shapley value)
+evolutionary game theory simulation
+
+# === Personal Productivity & Automation ===
+reminder and notification system
+calendar event management API
+personal knowledge base (Zettelkasten)
+habit tracker backend
+expense tracking and budgeting tool
+RSS feed aggregator
+bookmark manager with tagging
+clipboard history manager
+time tracking automation
+
+# === Apache & Web Server Configuration ===
+Apache HTTP Server configuration and tuning
+Apache virtual host setup
+Apache mod_rewrite rule writing
+Apache and Nginx migration
+web server benchmarking (ab/wrk/hey)
+HTTP/2 and HTTP/3 server configuration
+WebSocket server implementation and load testing

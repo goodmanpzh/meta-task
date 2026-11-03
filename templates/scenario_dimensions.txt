@@ -1,0 +1,121 @@
+# Scenario constraint combinations for Phase 1 scenario generation
+# Each line is a complete scenario constraint that controls how instruction.md should be written
+# These constraints control WRITING STYLE / LENGTH / FORMAT only, not task type.
+# ~60-70% are TB2-aligned styles (neutral/direct, conversational, terse one-liner, detailed spec)
+# ~30-40% are diverse/creative styles for variety
+# Lines starting with # are comments
+
+# === Neutral / Direct (goal + file path + constraint) — TB2 dominant style ===
+A short paragraph: state the goal, reference input files by path, specify the expected output file and format. No background or explanation.
+State the goal in 2-3 sentences. Include a file path and a concrete acceptance criterion (a metric, a format, or a pass/fail condition). Nothing else.
+A few sentences: what to produce, where to find the inputs, what format the output should be. Neutral tone, no backstory.
+Brief and precise. Goal, input path, output path, one constraint. Under 5 sentences.
+Numbered requirements (3-5 items). Each requirement is one sentence. No introduction or context.
+A short paragraph with the goal, then a bullet list of 2-4 constraints or requirements. No explanation of why.
+State the goal, reference files in the environment, and specify a numerical tolerance or threshold. Keep it under a paragraph.
+Goal in one sentence, then a code block showing the expected output format or an example input/output pair.
+A few sentences describing what the output artifact should be, referencing specific files. The agent must inspect the files to understand the details.
+
+# === Conversational / First-person — TB2 second style ===
+Written from first person: "I have [X] at [path]. I need [Y]." Short, natural, like asking a colleague.
+"I've been working on [something] — can you [goal]? The files are at [path]." Casual but technically precise.
+First person, 2-3 sentences. Mentions what they've already tried or set up, then states what they need.
+"Here's [artifact] I have. I need it to [goal]." Brief, practical, includes a file reference.
+A short "help me" message — describes the situation in 2-3 sentences, references files, asks for a specific outcome.
+Written as if talking to a teammate: informal, uses "my" and "this", references paths. Under 5 sentences.
+Written from the perspective of someone asking for help — a few sentences describing what they see and what they need.
+
+# === Terse one-liner — TB2 has ~17% of these ===
+A single sentence. The entire task — goal, input reference, output expectation — packed into one line.
+One sentence and a file path. That's it. Everything else must be discovered from the environment.
+A terse one-line goal and nothing else. The agent must explore the environment to figure out the details.
+A one-liner with a file path and a concrete deliverable. No context, no explanation.
+One sentence: the goal and a numerical target or size constraint. Nothing more.
+1-3 sentences only. The goal is stated but vague — the agent must explore the environment to understand what's needed.
+2-4 sentences. Deliberately omits what "done" looks like — the agent must figure that out by exploring.
+
+# === Detailed spec — TB2 uses this for complex tasks ===
+A structured specification: numbered requirements, each one sentence. Include specific file paths, format expectations, and acceptance criteria. Keep it organized but not verbose.
+Written like a short technical document: a goal paragraph, then a bullet list of requirements with precise constraints (tolerances, formats, file paths).
+A brief problem statement, then a numbered list of deliverables with exact specifications. Include code blocks for expected formats where relevant.
+A few short paragraphs with headers. States the goal, lists constraints, specifies the output format. Like a concise design doc.
+Written as a formal technical specification with numbered requirements (REQ-001, REQ-002...). Every requirement is testable.
+Academic paper abstract style — describes the problem formally, cites the approach, states the expected result metric.
+
+# === GitHub issue style ===
+Written like a GitHub issue: title and one-line description. Acceptance criteria just says "it should work correctly".
+An RFC-style summary: problem statement, approach, acceptance criteria. A few paragraphs at most.
+A professor's assignment — a short paragraph that poses the problem and hints at the approach without spelling it out.
+
+# =============================================
+# Below: diverse/creative styles for variety
+# =============================================
+
+# === Brief / Direct imperative ===
+Short and direct, like a sticky note left on a desk. A file path and a brief ask. No output format — agent decides.
+Short paragraph (3-5 sentences). States the goal clearly but omits the expected output format — the agent must infer it from the environment.
+Terse imperative: "Do X. It must [constraint]." No explanation or context. Under 5 sentences.
+A forwarded email — brief, with "can you look into this?" and a file reference. No other instructions.
+A chat message from a colleague: casual, short, includes a file path and a vague ask. Details only discoverable by reading the files.
+A voice-to-text transcription — slightly garbled, informal, under 5 sentences, but the core request is clear.
+A one-liner with sample input and expected output. No further guidance.
+
+# === Medium detail, natural gaps ===
+A short paragraph describing the goal, but the input data format is not documented — the agent must inspect the actual files to understand the schema.
+A brief technical handoff note. References internal jargon and file paths that exist in the environment but aren't explained.
+A Slack thread excerpt — a few short messages from different people with partial information. The actual task is implicit.
+Meeting notes — a few bullet points, action items at the bottom. Details are scattered and incomplete.
+A Notion-style doc with sections partially filled in and [TODO] markers. The task is to complete the TODOs.
+
+# === Detailed but incomplete ===
+A detailed spec, but one critical detail is outdated — the environment has changed since the spec was written. The agent must adapt.
+A brief description where one key assumption doesn't match reality — the agent must discover it through exploration.
+A short, confident paragraph that oversimplifies the situation. The real scope is larger — the agent must investigate.
+
+# === Narrative / Handoff ===
+A short handoff note — a few sentences from someone who just left, referencing files and partial progress. No formal structure.
+An onboarding document for a new team member: describes how the system works, then assigns a task. Includes architectural context but not all details.
+A follow-up message — references a "previous conversation" that doesn't exist. A few sentences. The agent must work from the environment context alone.
+
+# === Exploratory / Discovery-driven ===
+A vague one-sentence directive about a system. The agent must explore to understand the scope and deliver a result.
+A one-sentence directive with no target metric. The agent must decide what's acceptable.
+A single short sentence referencing a file or directory. The agent must explore to understand the full scope and what's expected.
+
+# === Multi-part / Compound ===
+Multiple related requests in one short message — "while you're at it, also..." style. Some requests depend on others.
+A short list: two or three one-line asks, no context. The agent must figure out the order and dependencies.
+
+# === Data-first / Environment-driven ===
+A brief sentence stating a high-level goal and a data location. The specifics must be inferred from the data files and test expectations.
+A short ask pointing to a data directory — no schema, no format description. The agent must inspect and decide.
+Raw data files are provided with a vague one-line ask. The agent must figure out what's interesting.
+
+# === Structured but incomplete ===
+A table of test cases with expected outputs, but no description of what to do — the agent must reverse-engineer the specification from the test cases.
+Skeleton files with TODO comments. The agent must figure out what each TODO requires from surrounding context.
+
+# === Conversational / Indirect ===
+Written as a short question, not a command. The agent must interpret it as a task and act.
+A one-line observation with attached data. The implicit task must be inferred.
+Thinking out loud in 1-2 sentences: "I wonder if we could..." — the agent must interpret this as a task and execute.
+
+# === Creative / Free-form ===
+No predefined format. Simulate how a real user would actually communicate their request — could be a voice memo, a sketch in words, a stream-of-consciousness message. Keep it short and natural.
+Written as if typing into a search engine — a fragmented query, not a proper sentence. The agent must interpret intent.
+Mixed language — switches between English and another language mid-sentence. Brief and informal.
+Written with typos, autocorrect errors, and informal abbreviations. Short but the actual request is valid.
+A short, casual message — like something typed quickly into a chat window. Abbreviated but clear.
+
+# === Raw output / Artifact-based ===
+A piece of program output with a brief one-line ask. The agent must interpret the output and figure out what to do.
+A terminal session copy-paste: a few commands and outputs. The agent must understand the sequence and continue.
+A short diff or log excerpt. The instruction is implicit — the agent must interpret and act.
+
+# === Storytelling / Immersive ===
+A brief story in 2-3 sentences — sets a scene, states a need. The technical details live in the environment files.
+A fictional company memo — corporate language, buries the actual task in the middle. Keep it under 10 sentences.
+
+# === Misleading ===
+The instruction describes the goal, but the suggested approach is wrong. The agent must find the correct solution.
+A confident paragraph that is subtly misleading. The agent must discover the real situation through exploration.

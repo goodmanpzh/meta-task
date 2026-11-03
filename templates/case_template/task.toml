@@ -1,0 +1,22 @@
+version = "1.0"
+
+[metadata]
+author_name = "Meta-Task Generator"
+author_email = "tasks@example.com"
+difficulty = "TODO: easy | medium | hard"
+category = "TODO: category name"
+tags = ["TODO: relevant tags"]
+expert_time_estimate_min = 30.0
+junior_time_estimate_min = 90.0
+
+[verifier]
+timeout_sec = 3600.0
+
+[agent]
+timeout_sec = 7200.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 1
+memory = "2G"
+storage = "10G"

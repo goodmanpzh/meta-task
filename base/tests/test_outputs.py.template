@@ -1,0 +1,16 @@
+from pathlib import Path
+
+OUTPUT_DIR = Path("/app/output")
+
+def test_required_files_exist():
+    """Check all required files are generated."""
+    required_files = [
+        "instruction.md",
+        "task.toml",
+        "environment/Dockerfile",
+        "solution/solve.sh",
+        "tests/test.sh",
+        "tests/test_outputs.py",
+    ]
+    for f in required_files:
+        assert (OUTPUT_DIR / f).exists(), f"Missing required file: {f}"
